@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    
+    <title>bitdegree</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/5ed507ef8aa53d8ecfea96d96bc7214cd2476fd2/FileSaver.min.js">
+    </script>
+</head>
+<body onload="mueveReloj();navegador();checkCookie();">
+    
+    
+    <section class="layout">
+        <div class="sidebar">
+            <h1>Menu</h1>
+            <ul>
+                
+            </ul>
+    
+            
+
+        </div>
+
+        <div class="body" id="divbody">
+            
+            
+            <div class="fullCard" id="thumbnail">
+                <h1 id="box-shadow">Generar un numero entero del 1 al 100 de forma aleatoria</h1>
+                <div class="cardContent">
+                  <button id="btnrandom" onclick="numrandom()">Random</button>
+                </div>
+                <p id="parraforandom"></p>
+            </div>
+
+            <div class="fullCard" id="2">
+              <h1 id="box-shadow">Hora actual</h1> </h1>
+              <div class="cardContent">
+                <h1 id="reloj"></h1>
+              </div>
+            </div>
+
+              <div class="fullCard" id="2">
+                <h1 id="box-shadow">Tamaño del navegador</h1> </h1>
+                <div class="cardContent">
+                  <h1 id="navegador"></h1>
+                </div>
+              </div>
+
+              <div class="fullCard" id="2">
+                <h1 id="box-shadow"></h1> </h1>
+                <div class="cardContent">
+                  <h1> Alertas</h1>
+
+                  <h2>JavaScript Alert</h2>
+
+                  <button onclick="firstFunction()">Probar</button>
+
+                  <h2>JavaScript Confirm Box</h2>
+
+                  <button onclick="firstFunction2()">Probar</button>
+
+                  <p id="test"></p>
+
+                  <h2>JavaScript Prompt</h2>
+
+                  <button onclick="firstFunction3()">Probar</button>
+
+                  <p id="test1"></p>
+                </div>
+              </div>
+
+              <div class="fullCard" id="2">
+                <h1 id="box-shadow"></h1> </h1>
+                <div class="cardContent">
+                 <textarea name="nota" id="nota" cols="70" rows="10" placeholder="Escribir nota y descargarlo"></textarea>
+                 <br>
+                 <button onclick="download()">Descargar nota</button>
+                </div>
+                
+              </div>
+              
+          </div>
+
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
